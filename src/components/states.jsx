@@ -59,8 +59,8 @@ const States = () => {
     }
 
 
-    useEffect(() => {
-        fetchCountry();
+    useEffect(async() => {
+        const apiCall = await fetchCountry();
     }, []);
 
 
